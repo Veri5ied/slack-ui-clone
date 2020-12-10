@@ -7,7 +7,7 @@ function Layout() {
     <div className="layout">
       <Header />
       <div className="layout__body">
-        {/* <Sidebar /> */}
+        <Sidebar />
       </div>
     </div>
   );

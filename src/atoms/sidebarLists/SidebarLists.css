@@ -1,0 +1,30 @@
+.sidebarLists {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.sidebarLists:hover {
+  background-color: var(--slack-primary-color);
+  opacity: 0.9;
+}
+
+.sidebarLists > h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sidebarLists__icon {
+  padding: 10px;
+  font-size: 31px !important;
+}
+
+.sidebarLists__channels {
+  padding: 10px 0;
+}
+
+.sidebarLists__hashtag {
+  padding: 12px;
+}
