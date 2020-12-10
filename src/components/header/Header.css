@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+  background-color: var(--slack-color);
+  color: var(--slack-secondary-color);
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  flex: 0.3;
+  margin-left: 20px;
+}
+
+.header__left > .MuiSvgIcon-root {
+  margin: 0 30px 0 auto;
+}
+
+.header__search {
+  flex: 0.4;
+  background-color: var(--slack-primary-color);
+  text-align: center;
+  display: flex;
+  padding: 0 50px;
+  color: gray;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+.header__search > input {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  min-width: 35vw;
+  color: var(--slack-secondary-color);
+}
+
+.header__right {
+  flex: 0.3;
+  display: flex;
+  align-items: flex-end;
+}
+
+.header__right > .MuiSvgIcon-root {
+  margin-right: 20px;
+  margin-left: auto;
+}
