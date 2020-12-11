@@ -12,13 +12,14 @@
 }
 
 .sidebarLists > h3 {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
 }
 
 .sidebarLists__icon {
-  padding: 10px;
+  padding: 2px 10px 10px 10px;
   font-size: 31px !important;
+  align-items: center;
 }
 
 .sidebarLists__channels {
