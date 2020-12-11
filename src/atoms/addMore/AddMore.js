@@ -1,5 +1,5 @@
 import React from "react";
-import AddIcon from "@material-ui/icons/ExpandMore";
+import AddIcon from "@material-ui/icons/Add";
 import SidebarLists from "../sidebarLists/SidebarLists";
 
 function AddMore() {
