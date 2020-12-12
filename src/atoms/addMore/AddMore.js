@@ -5,7 +5,7 @@ import SidebarLists from "../sidebarLists/SidebarLists";
 function AddMore() {
   return (
     <div>
-      <SidebarLists Icon={AddIcon} title="Add Channel" />
+      <SidebarLists Icon={AddIcon} title="Add Channel" addNewChannel/>
     </div>
   );
 }
