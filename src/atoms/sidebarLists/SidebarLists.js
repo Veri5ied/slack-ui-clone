@@ -3,7 +3,7 @@ import db from "../../firebaseConfig";
 import "./SidebarLists.css";
 import { useHistory } from "react-router-dom";
 
-function SidebarLists({ Icon, title, id, addNewChannel, selectChannel }) {
+function SidebarLists({ Icon, title, id, addNewChannel }) {
   const history = useHistory();
 
   const addChannel = () => {
