@@ -11,21 +11,23 @@ function Layout() {
     <div className="layout">
       <Router>
         {!user ? (
-        <h1>Login Screen</h1>
-      ) : (
-          <Header />
-        <div className="layout__body">
-          <Sidebar />
-          <Switch>
-            <Route path="/room/:roomId">
-              <Chat />
-            </Route>
-            <Route path="/">
-              <h1>Welcome</h1>
-            </Route>
-          </Switch>
-        </div>
-      )}
+          <h1>Login Screen</h1>
+        ) : (
+          <>
+            <Header />
+            <div className="layout__body">
+              <Sidebar />
+              <Switch>
+                <Route path="/room/:roomId">
+                  <Chat />
+                </Route>
+                <Route path="/">
+                  <h1>Welcome</h1>
+                </Route>
+              </Switch>
+            </div>
+          </>
+        )}
       </Router>
     </div>
   );
