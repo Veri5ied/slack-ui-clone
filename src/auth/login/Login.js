@@ -1,5 +1,6 @@
 import React from "react";
 import "./Login.css";
+import { Button } from "@material-ui/core";
 
 function Login() {
   return (
@@ -11,6 +12,7 @@ function Login() {
         />
         <h1>Sign in to Veri5ied's workspace</h1>
         <p>veri5ied.slack.com</p>
+        <Button>Sign in With Google Account</Button>
       </div>
     </div>
   );
