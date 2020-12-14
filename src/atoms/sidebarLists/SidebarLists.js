@@ -20,7 +20,7 @@ function SidebarLists({ Icon, title, id, addNewChannel }) {
 
   const selectChannel = () => {
     if (id) {
-      history.push(`rooms/${id}`);
+      history.push(`/room/${id}`);
     } else {
       history.push(title);
     }
