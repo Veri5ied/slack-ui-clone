@@ -8,3 +8,8 @@
   width: 50px;
   object-fit: contain;
 }
+
+.message__timestamp {
+  color: gray;
+  font-weight: 300;
+}
