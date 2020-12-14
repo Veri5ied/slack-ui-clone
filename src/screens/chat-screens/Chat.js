@@ -11,10 +11,10 @@ function Chat() {
 
   useEffect(() => {
     if (roomId) {
-      db.collection("room")
+      db.collection("rooms")
         .doc(roomId)
         .onSnapshot((snapshot) => {
-          setRoomName(snapshot.name);
+          setRoomName(snapshot.data());
         });
     }
   }, [roomId]);
