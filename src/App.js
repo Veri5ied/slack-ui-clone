@@ -1,13 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Layout from "./screens/layout/Layout";
 
 function App() {
-
-  
-
-  return (
-    <Layout />
-  );
+  return <Layout />;
 }
 
 export default App;
