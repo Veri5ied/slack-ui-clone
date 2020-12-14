@@ -16,9 +16,6 @@ function Layout() {
             <Route path="/room/:roomId">
               <Chat />
             </Route>
-            <Route path="/">
-              <h1>Welcome to the Chat Screen</h1>
-            </Route>
           </Switch>
         </div>
       </Router>
