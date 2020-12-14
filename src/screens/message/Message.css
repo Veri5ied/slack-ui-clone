@@ -13,3 +13,7 @@
   color: gray;
   font-weight: 300;
 }
+
+.message__info {
+  padding-left: 10px;
+}
