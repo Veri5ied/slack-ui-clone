@@ -3,3 +3,10 @@
   height: 100px;
   margin-bottom: 40px;
 }
+
+.login__container > button {
+  margin-top: 50px;
+  text-transform: inherit !important;
+  background-color: var(--slack-color);
+  color: var(--slack-secondary-color);
+}
