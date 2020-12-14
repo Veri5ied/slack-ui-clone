@@ -4,6 +4,7 @@
   max-width: 260px;
   flex: 0.3;
   color: var(--slack-secondary-color);
+  overflow: auto;
 }
 
 .sidebar__header {
