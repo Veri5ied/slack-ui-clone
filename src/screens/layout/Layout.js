@@ -4,6 +4,7 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Chat from "../chat-screens/Chat";
 import "./Layout.css";
+import Login from "../../auth/login/Login"
 
 function Layout() {
   const [user, setUser] = useState(null);
@@ -11,7 +12,7 @@ function Layout() {
     <div className="layout">
       <Router>
         {!user ? (
-          <h1>Login Screen</h1>
+          <Login />
         ) : (
           <>
             <Header />
