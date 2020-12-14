@@ -1,8 +1,20 @@
 import React from "react";
 import "./Login.css";
 import { Button } from "@material-ui/core";
+import { auth, googleAuth } from "../../firebaseConfig";
 
 function Login() {
+  const signin = () => {
+    auth
+      .signInWithPopup(googleAuth)
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <div className="login">
       <div className="login__container">
@@ -12,7 +24,7 @@ function Login() {
         />
         <h1>Sign in to Veri5ied's workspace</h1>
         <p>veri5ied.slack.com</p>
-        <Button>SIGN IN WITH GOOGLE ACCOUNT</Button>
+        <Button onClick={signin}>SIGN IN WITH GOOGLE ACCOUNT</Button>
       </div>
     </div>
   );
