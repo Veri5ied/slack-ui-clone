@@ -10,7 +10,10 @@ function Layout() {
   return (
     <div className="layout">
       <Router>
-        <Header />
+        {!user ? (
+        <h1>Login Screen</h1>
+      ) : (
+          <Header />
         <div className="layout__body">
           <Sidebar />
           <Switch>
@@ -22,6 +25,7 @@ function Layout() {
             </Route>
           </Switch>
         </div>
+      )}
       </Router>
     </div>
   );
