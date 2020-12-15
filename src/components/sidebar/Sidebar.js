@@ -18,7 +18,7 @@ function Sidebar() {
           <h2>Veri5ied Workspace</h2>
           <h3>
             <FiberManualRecordIcon />
-            Alvin Uchenna
+            {user?.displayName}
           </h3>
         </div>
         <CreateIcon />
