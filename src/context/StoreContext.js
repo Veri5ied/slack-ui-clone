@@ -1,8 +1,8 @@
 import React, { createContext, useState, useReducer } from 'react'
 
-const AppContextProvider = createContext()
+export const AppContext = createContext()
 
-function AppContext() {
+function AppContextProvider() {
     return (
         <div>
             
@@ -10,4 +10,4 @@ function AppContext() {
     )
 }
 
-export default AppContext
+export default AppContextProvider;
