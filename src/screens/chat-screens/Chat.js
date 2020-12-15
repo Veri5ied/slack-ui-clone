@@ -26,7 +26,7 @@ function Chat() {
       .collection("messages")
       .orderBy("timestamp", "asc")
       .onSnapshot((snapshot) =>
-        setRoomMessages(snapshot.docs.map((doc) => doc.data))
+        setRoomMessages(snapshot.docs.map((doc) => doc.data()))
       );
   }, [roomId]);
   return (
@@ -55,10 +55,7 @@ function Chat() {
         ))}
       </div>
 
-      <ChatInputField
-        channelName={roomName?.name}
-        channelId={roomId}
-      />
+      <ChatInputField channelName={roomName?.name} channelId={roomId} />
     </div>
   );
 }
