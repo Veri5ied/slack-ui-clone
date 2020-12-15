@@ -1,0 +1,9 @@
+.chatinputfield {
+  border-radius: 20px;
+}
+
+.chatinputfield > form {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
