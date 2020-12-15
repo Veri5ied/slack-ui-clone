@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ChatInputField.css";
 
 function ChatInputField({ channelName, channelId }) {
+  const [userInput, setUserInput] = useState("");
   const handleSend = (e) => {
     e.preventDefault();
   };
