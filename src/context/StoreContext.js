@@ -4,9 +4,9 @@ export const AppContext = createContext()
 
 function AppContextProvider({ reducer, initialState, children}) {
     return (
-        <div>
-            
-        </div>
+        <AppContext.Provider value={useReducer(reducer, initialState)}>
+            {children}
+        </AppContext.Provider>
     )
 }
 
