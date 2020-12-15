@@ -57,7 +57,7 @@ function Chat() {
 
       <ChatInputField
         channelName={roomName?.name}
-        channelId={roomName?.roomId}
+        channelId={roomId}
       />
     </div>
   );
