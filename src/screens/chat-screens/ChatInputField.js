@@ -11,6 +11,8 @@ function ChatInputField({ channelName, channelId }) {
     <div className="chatinputfield">
       <form>
         <input
+          value={userInput}
+          onChange={(e) => setUserInput(e.target.value)}
           type="text"
           placeholder={`Send a message in #${channelName?.toLowerCase()}`}
         />
