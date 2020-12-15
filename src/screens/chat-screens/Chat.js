@@ -53,6 +53,11 @@ function Chat() {
           />
         ))}
       </div>
+
+      <ChatInputField
+        channelName={roomName?.name}
+        channelId={roomName?.roomId}
+      />
     </div>
   );
 }
