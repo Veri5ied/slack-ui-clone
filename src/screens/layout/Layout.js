@@ -4,10 +4,13 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Chat from "../chat-screens/Chat";
 import "./Layout.css";
-import Login from "../../auth/login/Login"
+import Login from "../../auth/login/Login";
+import { useStateValue } from "../../context/StoreContext";
 
 function Layout() {
   const [user, setUser] = useState(null);
+  const [state, dispatch] = useStateValue();
+  
   return (
     <div className="layout">
       <Router>
