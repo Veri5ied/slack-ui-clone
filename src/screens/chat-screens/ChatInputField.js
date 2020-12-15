@@ -3,7 +3,7 @@ import "./ChatInputField.css"
 
 function ChatInputField() {
     return (
-        <div>
+        <div className="chatinputfield">
             
         </div>
     )
