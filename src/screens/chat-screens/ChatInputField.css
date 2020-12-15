@@ -7,3 +7,16 @@
   position: relative;
   justify-content: center;
 }
+
+.chatinputfield > form > input {
+  position: fixed;
+  bottom: 30px;
+  width: 60%;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+.chatinputfield > form > button {
+  display: none;
+}
