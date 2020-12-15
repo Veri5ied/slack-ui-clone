@@ -3,6 +3,7 @@ import "./Login.css";
 import { Button } from "@material-ui/core";
 import { auth, googleAuth } from "../../firebaseConfig";
 import { useStateValue } from "../../context/StoreContext";
+import { actionTypes } from "../../context/reducer";
 
 function Login() {
   const [state, dispatch] = useStateValue();
@@ -12,12 +13,14 @@ function Login() {
       .signInWithPopup(googleAuth)
       .then((result) => {
         console.log(result);
+        dispatch({
+          type: actionTypes.SET_USER,
+        });
       })
       .catch((error) => {
         console.log(error);
       });
   };
-
 
   return (
     <div className="login">
