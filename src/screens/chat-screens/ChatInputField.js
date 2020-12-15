@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useStateValue } from "../../context/StoreContext";
 import "./ChatInputField.css";
 
 function ChatInputField({ channelName, channelId }) {
   const [userInput, setUserInput] = useState("");
+  const [{ user }] = useStateValue();
   const handleSend = (e) => {
     e.preventDefault();
   };
