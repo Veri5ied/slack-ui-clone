@@ -6,8 +6,11 @@ import SidebarChannels from "../../atoms/sidebarChannels/SidebarChannels";
 import ExpandMore from "../../atoms/expandMore/ExpandMore";
 import AddMore from "../../atoms/addMore/AddMore";
 import "./Sidebar.css";
+import { useStateValue } from "../../context/StoreContext";
 
 function Sidebar() {
+  const [{ user }] = useStateValue();
+
   return (
     <div className="sidebar">
       <div className="sidebar__header">
