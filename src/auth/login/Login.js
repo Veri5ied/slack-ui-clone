@@ -2,8 +2,11 @@ import React from "react";
 import "./Login.css";
 import { Button } from "@material-ui/core";
 import { auth, googleAuth } from "../../firebaseConfig";
+import { useStateValue } from "../../context/StoreContext";
 
 function Login() {
+  const [state, dispatch] = useStateValue();
+
   const signin = () => {
     auth
       .signInWithPopup(googleAuth)
@@ -14,7 +17,7 @@ function Login() {
         console.log(error);
       });
   };
-  
+
 
   return (
     <div className="login">
