@@ -14,6 +14,6 @@ const reducer = (state, action) => {
         user: action.user,
       };
     default:
-      break;
+      return state;
   }
 };
