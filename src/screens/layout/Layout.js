@@ -9,8 +9,8 @@ import { useStateValue } from "../../context/StoreContext";
 
 function Layout() {
   const [user, setUser] = useState(null);
-  const [state, dispatch] = useStateValue();
-  
+  const [{ user }, dispatch] = useStateValue();
+
   return (
     <div className="layout">
       <Router>
