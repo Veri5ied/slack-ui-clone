@@ -8,7 +8,6 @@ import Login from "../../auth/login/Login";
 import { useStateValue } from "../../context/StoreContext";
 
 function Layout() {
-  const [user, setUser] = useState(null);
   const [{ user }, dispatch] = useStateValue();
 
   return (
