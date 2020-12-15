@@ -5,10 +5,11 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AppContextProvider from "./context/StoreContext";
+import { initialState } from "./context/reducer";
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppContextProvider>
+    <AppContextProvider initialState={initialState} reducer>
       <App />
     </AppContextProvider>
   </React.StrictMode>,
