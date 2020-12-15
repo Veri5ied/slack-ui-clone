@@ -5,6 +5,7 @@ import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import db from "../../firebaseConfig";
 import Message from "../message/Message";
+import ChatInputField from "./ChatInputField";
 
 function Chat() {
   const [roomName, setRoomName] = useState(null);
