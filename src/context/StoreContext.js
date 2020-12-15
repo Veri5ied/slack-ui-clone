@@ -1,4 +1,4 @@
-import React, { createContext, useState, useReducer } from "react";
+import React, { createContext, useContext, useReducer, useContext } from "react";
 
 export const AppContext = createContext();
 
@@ -11,3 +11,5 @@ function AppContextProvider({ reducer, initialState, children }) {
 }
 
 export default AppContextProvider;
+
+export const useStateValue = () => useContext(AppContext)
