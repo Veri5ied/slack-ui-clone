@@ -8,11 +8,15 @@ import { useStateValue } from "../../context/StoreContext";
 
 function Header() {
   const [{ user }] = useStateValue();
-  
+
   return (
     <div className="header">
       <div className="header__left">
-        <Avatar className="header__avatar" alt="Alvin" />
+        <Avatar
+          className="header__avatar"
+          alt={user?.displayName}
+          src={user?.photoURL}
+        />
         <AccessTimeIcon />
       </div>
       <div className="header__search">
