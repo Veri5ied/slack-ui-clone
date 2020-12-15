@@ -1,12 +1,23 @@
 import React, { useState } from "react";
 import { useStateValue } from "../../context/StoreContext";
 import "./ChatInputField.css";
+import firebase from "firebase";
+import db from "../../firebaseConfig";
 
 function ChatInputField({ channelName, channelId }) {
   const [userInput, setUserInput] = useState("");
   const [{ user }] = useStateValue();
   const handleSend = (e) => {
     e.preventDefault();
+
+    if (channelId) {
+      db.collection("rooms").doc(channelId).collection("message").add({
+        message: userInput,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp,
+        user: user.displayName,
+        userImage: user.photoURL,
+      });
+    }
   };
 
   return (
