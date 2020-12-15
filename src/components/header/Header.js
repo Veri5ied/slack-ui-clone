@@ -4,8 +4,11 @@ import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import SearchIcon from "@material-ui/icons/Search";
 import HelpOutlineIcon from "@material-ui/icons/HelpOutline";
 import "./Header.css";
+import { useStateValue } from "../../context/StoreContext";
 
 function Header() {
+  const [{ user }] = useStateValue();
+  
   return (
     <div className="header">
       <div className="header__left">
